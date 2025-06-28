@@ -1,0 +1,134 @@
+.summary h2 {
+  color: #2c3e50;
+  margin-bottom: 20px;
+}
+
+.balance-card {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  border-radius: 10px;
+  text-align: center;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 12px rgba(102, 126, 234, 0.3);
+}
+
+.balance-card h3 {
+  margin: 0 0 10px 0;
+  font-size: 16px;
+  opacity: 0.9;
+}
+
+.balance-amount {
+  font-size: 2.2rem;
+  font-weight: bold;
+  margin: 0;
+}
+
+.balance-amount.positive {
+  color: #4CAF50;
+}
+
+.balance-amount.negative {
+  color: #f44336;
+}
+
+.monthly-summary, .total-overview {
+  margin-bottom: 20px;
+}
+
+.monthly-summary h4, .total-overview h4 {
+  color: #555;
+  margin-bottom: 15px;
+  font-size: 16px;
+  border-bottom: 2px solid #f0f0f0;
+  padding-bottom: 8px;
+}
+
+.summary-grid {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 10px;
+}
+
+.summary-item {
+  padding: 15px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-item.income {
+  background-color: #e8f5e8;
+  border-left: 4px solid #4CAF50;
+}
+
+.summary-item.expense {
+  background-color: #ffeaea;
+  border-left: 4px solid #f44336;
+}
+
+.summary-item.balance {
+  background-color: #e3f2fd;
+  border-left: 4px solid #2196F3;
+}
+
+.summary-label {
+  font-weight: 600;
+  color: #555;
+}
+
+.summary-value {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.summary-value.positive {
+  color: #4CAF50;
+}
+
+.summary-value.negative {
+  color: #f44336;
+}
+
+.overview-grid {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.overview-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.overview-item:last-child {
+  border-bottom: none;
+}
+
+.overview-item span:first-child {
+  color: #666;
+}
+
+.overview-item span:last-child {
+  font-weight: 600;
+}
+
+.overview-item .income {
+  color: #4CAF50;
+}
+
+.overview-item .expense {
+  color: #f44336;
+}
+
+.loading-summary {
+  text-align: center;
+  padding: 40px;
+  color: #666;
+  font-style: italic;
+}
